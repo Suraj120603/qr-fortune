@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#1e1e2f" />
+  <title>🥠 Fortune Cookie · Scan for a Fortune</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cookie-card" id="app">
+
+    <!-- ============ LOADING (very brief) ============ -->
+    <div id="loading" class="loading">
+      <div class="spinner"></div>
+      <p>Cracking your fortune…</p>
+    </div>
+
+    <!-- ============ MAIN CONTENT ============ -->
+    <div id="mainContent" class="main-content">
+
+      <!-- Quote -->
+      <div class="quote-box">
+        <div class="quote-text" id="quoteText"></div>
+        <div class="quote-author" id="quoteAuthor"></div>
+      </div>
+
+      <!-- Funny image -->
+      <div class="fun-image">
+        <img id="funnyImage" alt="funny fortune cookie" />
+      </div>
+
+      <!-- Mini game -->
+      <div class="game-section">
+        <div class="game-title">
+          🎮 Mini Game <span id="gameName"></span>
+        </div>
+        <div class="game-area" id="gameArea"></div>
+        <div class="game-result" id="gameResult"></div>
+      </div>
+
+      <!-- Scan again -->
+      <div class="scan-again">
+        <div>🔒 SESSION COMPLETE</div>
+        <small>Scan the QR code again for a new fortune &amp; game</small>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
